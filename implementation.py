@@ -9,7 +9,7 @@ class GCGOptimizer:
     This implementation follows the paper's approach for finding adversarial prompts.
     """
     
-    def __init__(self, model_name, device="cpu"):
+    def __init__(self, model_name, device="cuda"):
         """Initialize with a pretrained language model and its tokenizer."""
         self.device = device
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
